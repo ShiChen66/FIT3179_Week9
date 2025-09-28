@@ -13,7 +13,7 @@
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
     {
-      "data": {"url": "https://github.com/ShiChen66/FIT3179_Week9/blob/main/Homework-w9/data/rainfall.csv"},
+      "data": {"url": "https://raw.githubusercontent.com/ShiChen66/FIT3179_Week9/refs/heads/main/Homework-w9/data/rainfall.csv"},
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
@@ -33,5 +33,6 @@
   ]
 
 }
+
 
 
