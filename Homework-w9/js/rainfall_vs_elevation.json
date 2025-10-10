@@ -8,9 +8,9 @@
   "params": [{
     "name": "rainfallFilter",
     "value": 0,
-    "bind": {"input": "range", "min": 0, "max": 3000, "step": 100, "name": "Min rainfall (mm): "}
+    "bind": {"input": "range", "min": 0, "max": 30, "step": 1, "name": "Min rainfall (mm): "}
   }],
-  "transform": [{"filter": "datum.rainfall >= rainfallFilter"}],
+  "transform": [{"filter": "datum.rainfall >= rainfallFilter"}, {"filter": "datum.elevation >= 0"}],
   "layer": [
     {
       "mark": {"type": "point", "filled": true, "opacity": 0.6},
@@ -24,14 +24,6 @@
           {"field": "elevation", "type": "quantitative", "title": "Elevation (m)", "format": ".0f"}
         ]
       }
-    },
-    {
-      "transform": [
-        {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "rainfall", "order": "descending"}]},
-        {"filter": "datum.rank == 1"}
-      ],
-      "mark": {"type": "text", "dy": -10, "align": "center", "fontWeight": "bold", "color": "darkred"},
-      "encoding": {"x": {"field": "elevation"}, "y": {"field": "rainfall"}, "text": {"value": "Highest Rainfall"}}
     }
   ]
 }
