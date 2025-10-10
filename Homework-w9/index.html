@@ -14,6 +14,7 @@
 <body>
   
 <div id="symbol_map"></div>
+<div id="scatter_plot"></div>
 
 <script type="text/javascript">
 
@@ -23,7 +24,7 @@
   }).catch(console.error);
 
   var spec3 = "https://raw.githubusercontent.com/ShiChen66/FIT3179_Week9/refs/heads/main/Homework-w9/js/rainfall_vs_elevation.json";
-  vegaEmbed('#symbol_map', spec3).then(function(result) {
+  vegaEmbed('#scatter_plot', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
@@ -31,6 +32,5 @@
 </body>
 
 </html>
-
 
 
