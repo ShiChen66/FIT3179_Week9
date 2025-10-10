@@ -1,4 +1,4 @@
-Station number,Station name,Region,rainfall,latitude,longitude,Elevation (m)
+station_number,station_name,region,rainfall,latitude,longitude,elevation
 97085,MOUNT READ,TAS,34.4,-41.84,145.54,1120
 97091,QUEENSTOWN (SOUTH QUEENSTOWN),TAS,24.6,-42.1,145.55,118
 97072,STRAHAN AERODROME,TAS,20.8,-42.16,145.29,21
@@ -1468,3 +1468,4 @@ Station number,Station name,Region,rainfall,latitude,longitude,Elevation (m)
 200790,CHRISTMAS ISLAND AERO,WA,0,-10.45,105.69,261
 200839,LORD HOWE ISLAND AERO,NSW,0,-31.54,159.08,5
 300017,CASEY,ANT,0,-66.28,110.52,40
+
