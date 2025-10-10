@@ -7,7 +7,7 @@
   "data": {"url": "https://raw.githubusercontent.com/ShiChen66/FIT3179_Week9/refs/heads/main/Homework-w9/data/map.topojson"},
   "params": [{
     "name": "rainfallFilter",
-    "value": 500,
+    "value": 0,
     "bind": {"input": "range", "min": 0, "max": 3000, "step": 100, "name": "Min rainfall (mm): "}
   }],
   "transform": [{"filter": "datum.rainfall >= rainfallFilter"}],
