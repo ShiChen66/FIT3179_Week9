@@ -4,7 +4,7 @@
   "width": 600,
   "height": 400,
   "title": "Elevation vs Rainfall across Australia",
-  "data": {"url": "https://raw.githubusercontent.com/ShiChen66/FIT3179_Week9/refs/heads/main/Homework-w9/data/map.topojson"},
+  "data": {"url": "https://raw.githubusercontent.com/ShiChen66/FIT3179_Week9/refs/heads/main/Homework-w9/data/rainfall.csv"},
   "params": [{
     "name": "rainfallFilter",
     "value": 0,
